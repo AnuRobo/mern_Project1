@@ -43,6 +43,11 @@ const PORT = process.env.PORT || 3006;
 //   response.send("Hello Sign Up");
 // });
 
+// heroku
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static("client/build"));
+}
+
 app.listen(PORT, () => {
   console.log("server is running at port number 3006");
 });
