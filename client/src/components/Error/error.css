@@ -1,0 +1,74 @@
+.error-container {
+  width: min(95%, 750px);
+  position: relative;
+  /* text-align: center; */
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+.fourOfour {
+  /* justify-content: center;
+  align-items: center; */
+}
+.fourOfour h1 {
+  font-size: 10rem;
+  position: absolute;
+  color: var(--bgclr6);
+  top: 50%;
+  left: 30%;
+  transform: translateX(-40%);
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.overlayError-container {
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  text-align: center;
+  /* border: 1px solid red; */
+  line-height: 2;
+  /* position: absolute; */
+}
+.overlayError-container h1 {
+  font-size: 2.6rem;
+  text-transform: uppercase;
+}
+.overlayError-container p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--textclr3);
+  word-spacing: 2px;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.home-btn {
+  background-color: var(--bgclr4);
+  color: var(--textclr4);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.5em 2em;
+  border-radius: 16px;
+}
+.home-btn:hover,
+.home-btn:active {
+  border: 1px solid var(--bgclr4);
+  background-color: var(--bgclr1);
+  color: var(--bgclr4);
+}
+
+@media (max-width: 680px) {
+  .overlayError-container h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 500px) {
+  .overlayError-container h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+}
